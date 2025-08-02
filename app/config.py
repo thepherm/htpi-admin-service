@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     # NATS configuration
     NATS_URL: str = "nats://localhost:4222"
     NATS_USER: str = "admin_user"
-    NATS_PASSWORD: str = ""
+    NATS_PASS: str = ""
     
     # JWT configuration
     JWT_SECRET: str = "your-secret-key-here"

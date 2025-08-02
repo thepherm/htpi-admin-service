@@ -25,7 +25,7 @@ class NATSService:
             self.nc = await nats.connect(
                 servers=settings.NATS_URL,
                 user=settings.NATS_USER,
-                password=settings.NATS_PASSWORD,
+                password=settings.NATS_PASS,
                 name=settings.SERVICE_NAME
             )
             self.js = self.nc.jetstream()
